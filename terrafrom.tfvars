@@ -1,0 +1,10 @@
+aws_region = "us-west-2"
+# s3_bucket_name              = "my-custom-logs-bucket-kpc"
+sns_topic_name              = "my-sns-topic"
+sqs_queue_name              = "my-sqs-queue"
+lambda_function_name        = "my-lambda-function"
+lambda_runtime              = "python3.8"
+lambda_handler              = "index.handler"
+log_group_retention_in_days = 30
+lambda_batch_size           = 5
+s3_bucket_name              = "unique-lambda-logs-bucket-${timestamp()}"
